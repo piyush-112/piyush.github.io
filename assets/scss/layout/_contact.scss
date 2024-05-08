@@ -1,0 +1,114 @@
+/** Start Contact Section **/
+.ms-contact {
+	.section-title {
+		.ligh-title {
+		  transform: translateY(-80%);
+		}
+	  }
+	iframe {
+		width: 100%;
+		height: 308px;
+		margin-bottom: -7px;
+		border-radius: 30px;
+	}
+	form {
+		.form-group {
+			margin-bottom: 30px;
+			input,
+			textarea {
+				padding: 15px;
+				border-color: $dotted-border-color;
+				border-radius: 15px;
+				font-size: 15px;
+				color: $text-color;
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+				&::placeholder {
+					color: $text-999;
+				}
+			}
+		}
+		button {
+			height: auto;
+			margin: 10px 0 0 0;
+			border: 0;
+			background: transparent;
+		}
+	}
+	.ms-box {
+		margin-bottom: 30px;
+		padding: 30px;
+		display: flex;
+		background: #fff;
+		border-radius: 15px;
+		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
+		position: relative;
+		overflow: hidden;
+		&:before {
+			@include ease3;
+			content: "";
+			width: 150px;
+			height: 150px;
+			background-color: rgba(0, 0, 0, 0.06);
+			position: absolute;
+			top: -65%;
+			right: -2%;
+			border-radius: 50%;
+		  }
+		  &:after {
+			@include ease3;
+			content: "";
+			width: 150px;
+			height: 150px;
+			background-color: rgba(0, 0, 0, 0.06);
+			position: absolute;
+			top: -15%;
+			right: -23%;
+			border-radius: 50%;
+		  }
+		  &:hover {
+			&:before {
+			  top: -70%;
+			  right: -10%;
+			}
+			&:after {
+			  top: -38%;
+			  right: -20%;
+			}
+		  }
+		.detail {
+			display: flex;
+			align-items: center;
+		}
+		.info {
+			h3 {
+				font-size: 16px;
+			}
+		}
+		p {
+			margin: 0;
+			font-size: 14px;
+			color: $text-777;
+		}
+		.icon {
+			min-width: 70px;
+			width: 70px;
+			height: 70px;
+			margin: 0 15px 0 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			border: 1px solid $dotted-border-color;
+			animation: morphing-image 15s linear infinite forwards;
+			i {
+				font-size: 25px;
+				color: $main-text-color;
+			}
+		}
+	}
+}
+/** End Contact Section **/

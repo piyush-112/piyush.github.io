@@ -1,0 +1,25 @@
+/*===== Clients css =====*/
+.ms-client {
+	display: block;
+  .ms-client-outer {
+    ul {
+      padding: 0;
+      margin: -15px;
+    }
+  }
+}
+.ms-client-item {
+  display: block !important;
+  .ms-client-img {
+    padding: 15px;
+  }
+	img {
+    width: 100%;
+		margin: 0 auto;
+		transition: all 0.3s ease 0s;
+    border-radius: 15px;
+		cursor: pointer;
+		outline: 0;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
+	}
+}

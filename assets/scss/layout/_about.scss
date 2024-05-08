@@ -1,0 +1,162 @@
+/*===== About css =====*/
+.ms-about-detail {
+  h4 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: $fontfamily-poppins;
+    color: $main-text-color;
+  }
+  .ms-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: $text-color;
+    font-family: $fontfamily-poppins;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+.ms-about-info {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 20px 0;
+      font-size: 16px;
+      line-height: 18px;
+      color: $text-color;
+      font-family: $fontfamily-poppins;
+      display: flex;
+      border-bottom: 1px dashed $dotted-border-color;
+      &:first-child {
+        border-top: 1px dashed $dotted-border-color;
+      }
+      span {
+        display: block;
+      }
+      .title {
+        min-width: 110px;
+        display: inline-flex;
+        color: $main-text-color;
+        font-weight: 600;
+        position: relative;
+      }
+      b {
+        margin-right: 10px;
+        color: $main-text-color;
+        font-weight: 600;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+.ms-skill-progress {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ms-about {
+  .ms-box {
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+    &:before {
+      @include ease3;
+      content: "";
+      width: 150px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.06);
+      position: absolute;
+      top: -38%;
+      right: -15%;
+      border-radius: 50%;
+    }
+    &:after {
+      @include ease3;
+      content: "";
+      width: 150px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.06);
+      position: absolute;
+      top: -15%;
+      right: -32%;
+      border-radius: 50%;
+    }
+    &:hover {
+      &:before {
+        top: -43%;
+        right: -10%;
+      }
+      &:after {
+        top: -10%;
+        right: -37%;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      text-align: center;
+      color: $text-777;
+      line-height: 24px;
+    }
+    h3 {
+      font-size: 20px;
+      color: $main-text-color;
+    }
+    .progress {
+      width: 80px;
+      height: 80px;
+      background: transparent;
+      display: inline-block;
+      margin-bottom: 20px;
+      z-index: 3;
+      .track,
+      .fill {
+        transform: rotate(90deg) translate(0px, -80px);
+        stroke-width: 6;
+        fill: rgba(0, 0, 0, 0);
+      }
+      .track {
+        stroke-width: 6;
+        stroke: #ddd !important;
+      }
+      .fill {
+        stroke: $main-primary-color;
+      }
+      .fill {
+        stroke-dasharray: 219.99078369140625;
+        stroke-dashoffset: -219.99078369140625;
+        transition: stroke-dashoffset 1s;
+        stroke-width: 10;
+      }
+      .value {
+        fill: $main-primary-color;
+        font-size: 20px;
+        text-anchor: middle;
+        font-weight: 600;
+      }
+    }
+    .progress.active {
+      .fill {
+        stroke: $sec-bg;
+      }
+      .value {
+        fill: $sec-bg;
+      }
+    }
+  }
+}

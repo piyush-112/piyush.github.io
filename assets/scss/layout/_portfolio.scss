@@ -1,0 +1,177 @@
+/** Start Portfolio Section **/
+.ms-portfolio {
+  .section-title {
+    .ligh-title {
+      transform: translateY(-63%);
+    }
+  }
+}
+.portfolio-tabs {
+  margin-bottom: 50px;
+  text-align: center;
+  ul {
+    padding-left: 0;
+    li {
+      display: inline-block;
+      cursor: pointer;
+      padding: 0 10px;
+      font-weight: 600;
+      margin: 0px 10px;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      color: $main-text-color;
+      font-size: 16px;
+      line-height: 11px;
+      &:hover {
+        color: $main-primary-color;
+      }
+    }
+  }
+}
+li.mixitup-control-active {
+  color: $sec-bg !important;
+}
+.portfolio-img {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.fancybox-image {
+  padding: 0 15px;
+}
+.ms-project-box {
+  @include ease3;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 30px;
+  position: relative;
+  cursor: default;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
+  h3 {
+    color: $main-text-color;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .links {
+    margin-bottom: 10px;
+    color: $text-999;
+  }
+  a {
+    font-size: 14px;
+    color: $text-999;
+    font-weight: 300;
+    &:hover {
+      color: $main-primary-color;
+    }
+  }
+  p {
+    font-size: 14px;
+    a {
+      color: $sec-bg;
+    }
+  }
+  .ms-info {
+    margin-top: 30px;
+    display: flex;
+  }
+  img {
+    display: block;
+    position: relative;
+  }
+  .portfolio-img {
+    @include ease3;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .09);
+    a {
+      background-attachment: fixed;
+      height: 100%;
+      width: 100%;
+      background-size: 200px;
+      background-position: center;
+      background-attachment: inherit;
+      background-repeat: no-repeat;
+      display: block;
+      position: relative;
+    }
+    img {
+      @include ease3;
+    }
+    .overlay {
+      @include ease3;
+      width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: #fff;
+        opacity: 0;
+    }
+  }
+  &:hover {
+    .portfolio-img {
+      box-shadow: none;
+      img {
+        transform: rotate(-5deg) scale(1.2);
+      }
+      .overlay {
+        opacity: 1;
+      }
+    }
+    a.info {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  a.info {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    &:hover {
+      background-color: #fff;
+      color: $main-primary-color;
+    }
+  }
+  a.info {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+    color: #fff;
+  }
+  .ms-detail {
+    padding-left: 30px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        padding: 5px 0;
+      }
+    }
+  }
+}
+.fancybox-progress {
+  background: $main-primary-color;
+}
+/** End Portfolio Section **/

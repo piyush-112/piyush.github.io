@@ -1,0 +1,225 @@
+/*===== Whatsapp direct chat css =====*/
+.ms-style {
+	display: inline-block;
+	position: fixed;
+	letter-spacing: 0.1px;
+	z-index: 13;
+	.ms-button {
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 30px;
+		.whatsapp {
+			width: 23px;
+			height: 23px;
+			background-image: url(../images/common/whatsapp.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			display: table;
+			margin-right: 0;
+			font-size: 25px;
+			text-align: center;
+			line-height: 38px;
+			cursor: pointer;
+			color: #2ab674;
+		}
+	}
+	.ms-panel {
+		display: none;
+		margin-bottom: 5px;
+		width: 275px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
+		background-color: #fff;
+		border-radius: 30px;
+    	overflow: hidden;
+		.ms-header {
+			padding: 12px 15px 15px;
+			text-align: center;
+			color: #fff;
+			background: #2ab674;
+		}
+		.ms-body {
+			min-width: 250px;
+			white-space: nowrap;
+			list-style: none;
+			overflow-y: auto;
+		}
+	}
+	.ms-header {
+		strong {
+			font-size: 15px;
+			line-height: 20px;
+		}
+		p {
+			margin-bottom: 0;
+			color: #fff;
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+	.ms-list {
+		.d-flex {
+			display: flex;
+		}
+		.ms-img-cont {
+			position: relative;
+		}
+		.ms-user-img {
+			height: 40px;
+			width: 40px;
+			vertical-align: middle;
+			border-radius: 50%;
+		}
+		.ms-status-icon {
+			position: absolute;
+			bottom: 5px;
+			right: 1px;
+			height: 10px;
+			width: 10px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			background-color: #a0a0a0;
+		}
+		.ms-online {
+			background-color: #2ab674;
+		}
+		.ms-offline {
+			background-color: #a0a0a0;
+		}
+		.ms-user-info {
+			margin-top: 0;
+			margin-bottom: auto;
+			margin-left: 15px;
+			span {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 22px;
+				color: #555;
+			}
+			p {
+				margin-bottom: 0;
+				color: #888;
+				font-size: 12px;
+				line-height: 15px;
+				font-weight: 400;
+			}
+		}
+	}
+	.ms-body {
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+			.ms-user-img {
+				transition: all 0.3s ease-in-out;
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding: 10px;
+			display: block;
+			position: relative;
+			overflow-x: hidden;
+			overflow-y: hidden;
+			list-style-type: none;
+			transition: all 0.3s ease-in-out;
+			&:not(:last-child) {
+				border-bottom: 1px solid #eee;
+			}
+			&:hover {
+				background-color: rgba(42, 182, 116, 0.07);
+			}
+		}
+	}
+}
+.ms-right-bottom {
+	bottom: 15px;
+	right: 15px;
+	float: right;
+	.ms-box {
+		background-color: #2ab674;
+		border-radius: 30px;
+		cursor: pointer;
+		i {
+			font-size: 20px;
+			color: #fff;
+		}
+		&:hover {
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+@keyframes ms-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes ms-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes ms-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-ms-keyframes ms-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-o-keyframes ms-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.rotateForward {
+	animation-name: rotateF;
+	animation-duration: 0.65s;
+	animation-iteration-count: 1;
+}
+
+@keyframes rotateF {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.rotateBackward {
+	animation-name: rotateB;
+	animation-duration: 0.65s;
+	animation-iteration-count: 1;
+}
+@keyframes rotateB {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}

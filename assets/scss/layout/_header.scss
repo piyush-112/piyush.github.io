@@ -1,0 +1,32 @@
+/*===== Header css =====*/
+header {
+	position: relative;
+	z-index: 5;
+	nav {
+		position: relative;
+		a {
+			@include ease3;
+			padding: 10px;
+			position: fixed;
+			top: 50px;
+			right: 50px;
+			background: #07091c;
+			border-radius: 15px;
+			cursor: pointer;
+			opacity: .7;
+			.svg_img {
+				@include ease3;
+				width: 30px;
+				height: 30px;
+			}
+			&:hover {
+				.svg_img {
+					width: 35px;
+					height: 35px;
+				}
+				opacity: 1;
+			}
+		}
+	}
+}
+/* End Header */

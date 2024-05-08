@@ -1,0 +1,741 @@
+/* Responsive css */
+@media only screen and (max-width: 1399px) {
+    .ms-hero {
+        .hero-content {
+            .ms-hero-img {
+                max-width: 300px;
+            }
+            .ms-hero-detail {
+                .ms-hero-title {
+                    font-size: 48px;
+                }
+            }
+            .ms-hero-name {
+                h3 {
+                    font-size: 36px;
+                    line-height: 42px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .padding-tb-80 {
+        padding: 50px 0;
+    }
+    .margin-t-80 {
+        margin-top: 50px;
+    }
+    .margin-b-50 {
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .ms-hero {
+        .hero-content {
+            .ms-hero-img {
+                max-width: 280px;
+            }
+            .ms-hero-detail {
+                .ms-hero-title {
+                    font-size: 45px;
+                }
+            }
+            .ms-hero-name {
+                h3 {
+                    font-size: 34px;
+                    line-height: 40px;
+                }
+            }
+            .art {
+                right: 270px;
+            }
+        }
+    }
+    .section-title {
+        h2 {
+            padding: 33px 0;
+            font-size: 34px;
+        }
+        .ligh-title {
+            font-size: 90px;
+        }
+    }
+    .ms-about {
+        .ms-box {
+            &:after {
+                right: -53%;
+            }
+            &:before {
+                top: -40%;
+                right: -24%;
+            }
+            &:hover {
+                &:after {
+                    right: -52%;
+                }
+            }
+        }
+    }
+    .ms-about-detail {
+        h4 {
+            font-size: 19px;
+        }
+        .ms-text {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    .ms-about-info {
+        ul {
+            li {
+                padding: 15px 0;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    .box-front {
+        .content-wrap {
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+    .education,
+    .experiense {
+        h4 {
+            font-size: 21px;
+        }
+    }
+    .timeline-content {
+        .timeline-title {
+            font-size: 16px;
+        }
+    }
+    .ms-project-box {
+        h3 {
+            font-size: 19px;
+        }
+        .portfolio-img {
+            width: 130px;
+        }
+    }
+    .achive {
+        .count-block {
+            h3 {
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+    }
+    .ms-news {
+        .news-info {
+            .detail {
+                h3 {
+                    a {
+                        font-size: 15px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .ms-contact {
+        .ms-box {
+            &:before {
+                top: -84%;
+                right: -10%;
+            }
+            &:after {
+                right: -30%;
+            }
+            &:hover {
+                &:after {
+                    right: -25%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .m-b-991 {
+        margin-bottom: 50px;
+    }
+    .m-b-991-20 {
+        margin-bottom: 20px;
+    }
+    .section-title {
+        h2 {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+    }
+    .ms-hero.margin-b-50 {
+        margin: 0;
+    }
+    .ms-hero {
+        height: 100%;
+        .hero-content {
+            margin: 50px 0;
+            align-items: center;
+            .ms-hero-img {
+                max-width: 100%;
+                margin: 50px 0 30px 0;
+            }
+            .ms-hero-name {
+                min-width: 100%;
+                h3 {
+                    font-size: 28px;
+                    span {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .hero-item {
+                max-width: 500px;
+                padding: 0;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .ms-hero-detail {
+                max-width: 400px;
+                .ms-hero-detail {
+                    text-align: left;
+                    font-size: 14px;
+                }
+                .ms-hero-title {
+                    margin: 0 0 10px 0;
+                    font-size: 33px;
+                    line-height: 47px;
+                    span {
+                        max-width: 100%;
+                        display: flex;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .scroll-next {
+        display: none;
+    }
+    .ms-about {
+        .ms-box{
+            &:after {
+                right: -36%;
+            }
+            &:hover {
+                &:after {
+                    right: -32%;
+                } 
+            }
+        }
+    }
+    .education,
+    .experiense {
+        h4 {
+            font-size: 20px;
+        }
+    }
+    .box-front {
+        .content-wrap {
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
+    .ms-project-box {
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .ms-project-box {
+        .portfolio-img {
+            width: 200px;
+        }
+    }
+    .achive {
+        .count-block {
+            h3 {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+    }
+    .ms-news {
+        .news-info {
+            .detail {
+                h3 {
+                    line-height: 16px;
+                    a {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .ms-contact {
+        .m-b-minus-30px {
+            margin-bottom: 0;
+        }
+    }
+    .ms-contact {
+        .ms-box{
+            &:before {
+                top: -75%;
+                right: -8%;
+            }
+            &:after {
+                right: -16%;
+            }
+            &:hover {
+                &:after {
+                    right: -15%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .section-title {
+        h2 {
+            padding: 0 0 10px 0;
+        }
+        .ligh-title {
+            display: none;
+        }
+    }
+    .ms-hero {
+        .hero-content {
+            .ms-hero-detail {
+                .ms-hero-title {
+                    margin: 0 0 10px 0;
+                    font-size: 30px;
+                }
+            }
+            .ms-hero-name {
+                h3 {
+                    font-size: 24px;
+                    &:after {
+                        height: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .ms-about {
+        .ms-box{
+            &:before {
+                right: -13%;
+            }
+            &:after {
+                right: -22%;
+            }
+            &:hover{
+                &:after {
+                    right: -20%;
+                }
+            }
+            h3 {
+                font-size: 19px;
+            }
+        }
+    }
+    .portfolio-tabs {
+        ul {
+            li {
+                line-height: 30px;
+            }
+        }
+    }
+    .achive {
+        .count-block{
+            &:before {
+                right: -6%;
+            }
+        }
+    }
+    .ms-contact {
+        .ms-box{
+            &:after {
+                right: -20%;
+            }
+            &:hover{
+                &:after {
+                    right: -18%;
+                }
+            }
+        }
+        form {
+            .form-group {
+                input, textarea {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+    footer {
+        .ms-footer-detail {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .ms-copy {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    .section-title {
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+    }
+    header {
+        nav {
+            a {
+                top: 15px;
+                right: 15px;
+                .svg_img {
+                    width: 25px;
+                    height: 25px;
+                }
+                &:hover {
+                    .svg_img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .ms-hero {
+        .hero-content {
+            .ms-hero-detail {
+                .ms-hero-title {
+                    font-size: 28px;
+                }
+            }
+            .ms-hero-name {
+                h3 {
+                    font-size: 23px;
+                }
+            }
+            .art {
+                right: 50px;
+            }
+        }
+    }
+    .ms-about-detail {
+        h4 {
+            margin-bottom: 15px;
+        }
+    }
+    .ms-project-box {
+        .portfolio-img {
+            width: 150px;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .ms-project-box {
+        .portfolio-img {
+            width: 120px;
+        }
+    }
+    .ms-hero {
+        .hero-content {
+            .ms-hero-img {
+                margin: 50px 15px 30px 15px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    .ms-project-box {
+        .ms-info {
+            flex-direction: column;
+        }
+        .portfolio-img {
+            width: 100%;
+            height: 200px;
+            a {
+                background-size: 100%;
+            }
+        }
+        .ms-detail {
+            padding: 30px 0 0 0;
+        }
+    }
+    .ms-about {
+        .ms-box{
+            &:after {
+                right: -28%;
+            }
+            &:hover {
+                &:after {
+                    right: -26%;
+                }
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+    .ms-contact {
+        .ms-box{
+            &:after {
+                right: -28%;
+            }
+            &:before {
+                top: -47%;
+            }
+            &:hover {
+                &:after {
+                    top: -20%;
+                    right: -30%;
+                }
+                &:before {
+                    top: -53%;
+                }
+            }
+        }
+    }
+    .ms-hero {
+        .hero-content {
+            .ms-hero-detail {
+                .ms-hero-title {
+                    font-size: 26px;
+                }
+            }
+        }
+        .ms-diamond-1 {
+            top: 27%;
+        }
+    }
+    .section-title {
+        h2 {
+            font-size: 26px;
+        }
+    }
+    .ms-about-detail {
+        h4 {
+            font-size: 18px;
+        }
+    }
+    .education, .experiense {
+        h4 {
+            font-size: 19px;
+        }
+    }
+    .timeline-content {
+        .timeline-title {
+            .sub {
+                width: 100%;
+                margin: 5px 0 0 0;
+                display: block;
+            }
+        }
+    }
+    .achive {
+        .count-block {
+            h3 {
+                font-size: 34px;
+            }
+        }
+    }
+    .ms-contact {
+        .ms-box {
+            .info {
+                h3 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .portfolio-tabs {
+        ul {
+            li {
+                font-size: 15px;
+            }
+        }
+    }
+    .ms-contact {
+        .ms-box {
+            .detail {
+                width: 100%;
+                flex-direction: column;
+                .icon {
+                    margin-bottom: 15px;
+                }
+                .info {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    footer {
+        .ms-footer-detail {
+                height: 130px;
+            .ms-copy {
+                margin-bottom: 14px;
+                text-align: center;
+            }
+        }
+    }
+    .ms-project-box {
+        p {
+            a {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+    header {
+        nav {
+            a {
+                top: 0;
+                right: 0;
+                border-radius: 0 0 0 15px;
+            }
+        }
+    }
+    .ms-hero {
+        .hero-content {
+            .ms-hero-detail {
+                .ms-hero-title {
+                    font-size: 24px;
+                }
+            }
+            .ms-hero-name {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .ms-diamond-5 {
+            top: -2%;
+        }
+    }
+    .section-title {
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .ms-about-detail {
+        h4 {
+            font-size: 17px;
+        }
+    }
+    .ms-about {
+        .ms-box {
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
+    .ms-about-info {
+        ul {
+            li {
+                font-size: 13px;
+                .title {
+                    min-width: 90px;
+                }
+            }
+        }
+    }
+    .education, .experiense {
+        h4 {
+            font-size: 18px;
+        }
+    }
+    .timeline-content {
+        .timeline-title {
+            font-size: 14px;
+        }
+    }
+    .ms-project-box {
+        h3 {
+            font-size: 16px;
+        }
+    }
+    .achive {
+        .count-block {
+            h3 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 16px;
+            }            
+        }
+    }
+    .timeline-info {
+        span {
+            font-size: 11px;
+        }
+    }
+    .box-back {
+        .content-wrap {
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .section-title {
+        h2 {
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+    .ms-hero {
+        .hero-content {
+            .ms-hero-detail {
+                .ms-hero-title {
+                    font-size: 23px;
+                }
+            }
+            .ms-hero-name {
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .ms-about {
+        .ms-box{
+            &:after {
+                right: -34%;
+            }
+            &:hover {
+                &:after {
+                    right: -34%;
+                }
+            }
+        }
+    }
+    .portfolio-tabs {
+        ul {
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+    .achive {
+        .count-block {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
